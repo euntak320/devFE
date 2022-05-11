@@ -493,21 +493,21 @@ section.active {
     line-height: 40px;
 }
 
-.content__about-info .education,
+.content__education,
 .content__about-info .experience {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
 
-.content__about-info h3.title {
+.content__education-title {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
-.content__about-info .timeline-box {
+.content__timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -924,7 +924,7 @@ section.active {
     .portfolio .portfolio-item,
     .service .service-item,
     .content__about-info .experience,
-    .content__about-info .education,
+    .content__education,
     .content__about-info .skills,
     .content__about-info .content__personal-info {
         flex: 0 0 100%;
