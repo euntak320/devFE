@@ -60,7 +60,7 @@ const nav = document.querySelector(".leftmenu__navigation"),
         }
       }
 
-      document.querySelector(".hire-me").addEventListener("click", function(){
+      document.querySelector(".home__link").addEventListener("click", function(){
         const sectionIndex = this.getAttribute("data-section-index");
         showSection(this);
         updateNav(this);
