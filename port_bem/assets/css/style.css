@@ -494,13 +494,14 @@ section.active {
 }
 
 .content__education,
-.content__about-info .experience {
+.content__experience {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
 
-.content__education-title {
+.content__education-title,
+.content__experience-title{
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
@@ -512,7 +513,7 @@ section.active {
     max-width: 100%;
 }
 
-.content__about-info .timeline {
+.content__timeline {
     width: 100%;
     padding: 30px 15px;
     border:1px solid var(--bg-black-100);
@@ -520,16 +521,16 @@ section.active {
     background: var(--bg-black-100);
 }
 
-.content__about-info .timeline .timeline-item {
+.content__timeline-item {
     position: relative;
     padding: 0 0 50px 37px;
 }
 
-.content__about-info .timeline .timeline-item:last-child {
+.content__timeline-item:last-child {
     padding-bottom: 0;
 }
 
-.content__about-info .timeline .timeline-item::before {
+.content__timeline-item::before {
     content: "";
     position: absolute;
     left: 7px;
@@ -539,7 +540,7 @@ section.active {
     background-color: var(--skin-color);   
 }
 
-.content__about-info .timeline .circle-dot {
+.content__circle-dot {
     position: absolute;
     left:0;
     top:0;
@@ -549,18 +550,18 @@ section.active {
     background-color: var(--skin-color);
 }
 
-.content__about-info .timeline .timeline-date {
+h3.content__timeline-date {
     margin-bottom: 12px;
     font-weight: 400;
     font-size:14px;
     color: var(--text-black-700);
 }
 
-.content__about-info .timeline .timeline-date .fa {
+.content__timeline-date .fa {
     margin-right: 5px;
 }
 
-.content__about-info .timeline .timeline-title {
+.content__timeline-title {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
@@ -568,7 +569,7 @@ section.active {
     color: var(--text-black-900);
 }
 
-.content__about-info .timeline .timeline-text {
+.content__timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
