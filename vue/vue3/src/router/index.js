@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import InputView from '../views/Inputview.vue'
 
 const routes = [
   {
@@ -18,7 +19,7 @@ const routes = [
   {
     path: '/input',
     name: 'input',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Inputview.vue')
+    component: InputView
   },
 ]
 
