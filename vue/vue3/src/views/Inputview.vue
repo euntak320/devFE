@@ -6,11 +6,20 @@
     <button type="button" @click="setData">SET</button>
 
 
-    <select style="display:block;" v-model="resign">
+    <select style="display:block;" v-model="resign" @click="chageRegion">
     <!-- v-model를 통해서 데이터를 가지옴 -->
       <option :key="i" :value="d.v" v-for="(d, i) in options">{{d.t}}</option>
-      <!-- key의 값은 유일한 번호 -->
+      <!-- key의 값은 유일한 번호  v-for는 배열처리 부분-->
     </select>
+
+    <table>
+        <tbody>
+          <tr :key="i" v-for="(d, i) in options">
+            <td>{{d.v}}</td>
+            <td>{{d.t}}</td>
+          </tr>
+        </tbody>
+    </table>
   </div>
 </template>
 
@@ -35,6 +44,9 @@
       },
       setData() {
         this.text = "1234";
+      },
+      chageRegion(){
+        alert(this.resign)
       }
     }
   };
