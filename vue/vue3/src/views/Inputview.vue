@@ -3,7 +3,14 @@
     <h1>안녕하세요 {{title}}!</h1>
     <input type="text" v-model="text" />
     <button type="button" @click="getData">GET</button>
-    <button type="button" @click="setData">GET</button>
+    <button type="button" @click="setData">SET</button>
+
+
+    <select style="display:block;" v-model="resign">
+    <!-- v-model를 통해서 데이터를 가지옴 -->
+      <option :key="i" :value="d.v" v-for="(d, i) in options">{{d.t}}</option>
+      <!-- key의 값은 유일한 번호 -->
+    </select>
   </div>
 </template>
 
@@ -14,6 +21,12 @@
       return{
         title: "타라탁",
         text: "abcd",
+        options : [
+          {v:"s",t:"seoul"},
+          {v:"j",t:"jeju"},
+          {v:"b",t:"busan"},
+        ],
+        resign: "j"
       };
     },
     methods : {
