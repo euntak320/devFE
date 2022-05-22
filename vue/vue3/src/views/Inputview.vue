@@ -12,7 +12,7 @@
       <!-- key의 값은 유일한 번호  v-for는 배열처리 부분-->
     </select>
 
-    <table v-if="tableShow">
+    <table v-show="tableShow">
         <tbody>
           <tr :key="i" v-for="(d, i) in options">
             <td>{{d.v}}</td>
