@@ -12,7 +12,7 @@
       <!-- key의 값은 유일한 번호  v-for는 배열처리 부분-->
     </select>
 
-    <table>
+    <table v-if="tableShow">
         <tbody>
           <tr :key="i" v-for="(d, i) in options">
             <td>{{d.v}}</td>
@@ -35,7 +35,8 @@
           {v:"j",t:"jeju"},
           {v:"b",t:"busan"},
         ],
-        resign: "j"
+        resign: "j",
+        tableShow :true
       };
     },
     methods : {
