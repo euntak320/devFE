@@ -13,6 +13,7 @@
     </select>
 
     <table v-show="tableShow">
+    <!-- v-show는 리소스를 덜 잡아먹는다 -->
         <tbody>
           <tr :key="i" v-for="(d, i) in options">
             <td>{{d.v}}</td>
