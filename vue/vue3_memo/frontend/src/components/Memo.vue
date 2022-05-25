@@ -31,6 +31,7 @@
 
 <script>
 import { reactive } from 'vue';
+import axois from "axios";
 
     export default {
         setup() {
@@ -41,6 +42,10 @@ import { reactive } from 'vue';
             const add = () => {
                 state.data.push("추가된 메모 내용");
             }
+
+            axois.get("http://localhost:3000/memos").then((res) => {
+                console.log(res)
+            });
 
             return{ state, add };
         }
