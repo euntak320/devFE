@@ -4,7 +4,7 @@ const port = 3000
 
 const memos = ["메모1", "메모2", "메모3"];
 
-app.get('/memos', (req, res) => {
+app.get('http://localhost:3000/memos', (req, res) => {
   res.send(memos)
 })
 

@@ -43,7 +43,7 @@ import axois from "axios";
                 state.data.push("추가된 메모 내용");
             }
 
-            axois.get("http://localhost:3000/memos").then((res) => {
+            axois.get("/api/memos").then((res) => {
                 console.log(res)
             });
 
