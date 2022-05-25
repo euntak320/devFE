@@ -19,9 +19,11 @@
         list-style: none;
         padding: 15px 0;
         margin:0;
+        
         li {
-            padding: 5px 10px;
+            padding: 10px 15px;
             margin:5px;
+            border:1px solid #eee;
         }
     }
     }
@@ -34,7 +36,7 @@ import { reactive } from 'vue';
         setup() {
             const state = reactive({
                 // 데이터를 동적으로 가지고 오게 하는거
-                data: [ "메모 1 내용", "메모 2 내용", "메모 3 내용", "메모 4 내용", "메모 5 내용",]
+                data: []
             })
             const add = () => {
                 state.data.push("추가된 메모 내용");
